@@ -1,0 +1,11 @@
+{
+  "name": "keel",
+  "description": "Keel plugins for Claude Code",
+  "owner": {
+    "name": "Viitorcloud Technologies Pvt. Ltd",
+    "url": "https://keel.viitor.ai"
+  },
+  "plugins": [
+    { "name": "keel-context", "source": "./" }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "keel": {
+      "type": "http",
+      "url": "https://api-keel.viitor.ai/mcp"
+    }
+  }
+}
