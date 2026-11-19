@@ -12,7 +12,9 @@ You save to Keel ONLY after the user explicitly approves the final draft.
 1. Confirm the project. Find its requirements:
    - Use any brief, notes or requirement list the user pasted or attached.
    - Search Keel with `keel_search` and `keel_get_context` for the project's
-     brief, requirement documents, meeting notes and emails.
+     brief, requirement documents, meeting notes and emails. Keep `top_k`
+     between 1 and 25 (default 10) and leave `min_similarity` unset. Larger
+     values are rejected. To cover more ground, run more focused searches.
    - **Hard stop:** if neither the user nor Keel gives at least one
      requirement for this project, do NOT do steps 2 to 9. Your whole reply is
      then only three short parts, with no title, no sections and no outline:

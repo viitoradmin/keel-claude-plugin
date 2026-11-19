@@ -16,6 +16,9 @@ plan, search, review, answer). Use the tools below within its steps.
 
 1. Search first with `keel_search`, using the user's key terms.
 2. For a broader answer, call `keel_get_context` to gather related passages.
+   For both tools, keep `top_k` between 1 and 25 (default 10) and leave
+   `min_similarity` unset. Larger values are rejected; run more focused
+   searches instead.
 3. For questions about verified figures or statuses, call `keel_get_facts`.
 4. Before stating a figure, date or rule, find its passage with `keel_search`
    or `keel_get_context`, then call `keel_get_evidence` with the `chunk_id`
