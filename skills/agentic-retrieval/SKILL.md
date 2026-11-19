@@ -13,7 +13,7 @@ Follow these steps in order, and tell the user briefly what you are doing at eac
    - If the question relates things (cause/effect, comparison), add one part per side.
    - Decide whether it needs reasoning (a conclusion) or is a plain lookup.
 3. **Search.** Run `keel_search` (or `keel_get_context`) for each part. Never drop
-   the names or identifiers from a part.
+   the names or identifiers from a part. Keep `top_k` between 1 and 25 (default 10) and leave `min_similarity` unset; larger values are rejected.
 4. **Review.** Look at the passages and decide, in one plain sentence, whether they
    cover EVERY part. If not, run up to 2 new, distinct queries, using terms learned
    from the passages. Never repeat a query. Do at most 2 review rounds.

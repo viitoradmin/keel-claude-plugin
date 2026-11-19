@@ -19,6 +19,9 @@ final draft.
    `keel_get_facts`: matching case studies, team profiles, delivery process,
    certifications and security policies, the approved rate card, effort data
    from past projects, and standard terms.
+   For `keel_search` and `keel_get_context`, keep `top_k` between 1 and 25
+   (default 10) and leave `min_similarity` unset. Larger values are rejected.
+   To cover more ground, run more focused searches, not a bigger `top_k`.
    If case studies are in your task prompt, use them.
    Confirm every fact: find the passage with `keel_search` or
    `keel_get_context`, then call `keel_get_evidence` with the `chunk_id` from
