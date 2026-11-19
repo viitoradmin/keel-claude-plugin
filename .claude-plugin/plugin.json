@@ -1,7 +1,7 @@
 {
   "name": "keel-context",
   "displayName": "Keel Context",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Ground Claude's answers in your company's documents. Search, cite and add knowledge in your Keel workspace.",
   "author": {
     "name": "Viitorcloud Technologies Pvt. Ltd",
