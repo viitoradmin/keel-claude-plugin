@@ -18,6 +18,7 @@ A Keel account with access to at least one workspace.
 
 - The Keel connector (https://api-keel.viitor.ai/mcp)
 - A skill that tells Claude when to search Keel, how to cite sources, and when it may add content
+- An `agentic-retrieval` skill that plans the search, checks that the passages cover every part of the question, and only then answers
 - Two agents for RFP and proposal work (Cowork and Claude Code):
   - `keel-rfp-writer`: writes a new RFP for your project from its requirements in Keel, and saves it after your approval
   - `keel-proposal-writer`: writes your proposal in reply to a client's RFP from Keel evidence, and saves it after your approval
